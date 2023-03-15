@@ -5,7 +5,7 @@ i = 0
 start = time.time()
 while(cap.isOpened()):
     ret, frame = cap.read()
-    # cv2.imshow('frame', frame)
+    cv2.imshow('frame', frame)
     i = i + 1
     print(i)
     if cv2.waitKey(20) & 0xFF == ord('q'):
