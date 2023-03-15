@@ -29,7 +29,7 @@ import threading
 
 
 class SIYIRTSP:
-    def __init__(self, rtsp_url="rtsp://192.168.144.25:8554/main.264", cam_name="ZR10", debug=False) -> None:
+    def __init__(self, rtsp_url="rtsp://192.168.144.25:8554/main.264", cam_name="A8 mini", debug=True) -> None:
         '''
         Receives video stream from SIYI cameras
 
@@ -69,7 +69,7 @@ class SIYIRTSP:
 
         # timeout (seconds) before closing everything
         # If the returned frame is None for this amount of time, exit
-        self._connection_timeout=2.0
+        self._connection_timeout=5.0
 
         # Image receiving thread
         self._recv_thread = threading.Thread(target=self.loop)
