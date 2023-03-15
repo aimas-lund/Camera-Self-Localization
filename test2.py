@@ -5,7 +5,7 @@ import threading
 q=queue.Queue()
 
 def Receive():
-    print("start Reveive")
+    print("Start Receive")
     cap = cv2.VideoCapture("rtsp://admin:admin_123@172.0.0.0")
     ret, frame = cap.read()
     q.put(frame)
@@ -24,7 +24,7 @@ def Display():
                 break
             
 if __name__=='__main__':
-    p1=threading.Thread(target=Receive)
+    p1 = threading.Thread(target=Receive)
     p2 = threading.Thread(target=Display)
     p1.start()
     p2.start()

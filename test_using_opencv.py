@@ -10,6 +10,8 @@ while(cap.isOpened()):
     print(i)
     if cv2.waitKey(20) & 0xFF == ord('q'):
         print("no cap")
+        end = time.time()
+        print(start-end)
         break
 cap.release()
 cv2.destroyAllWindows()
