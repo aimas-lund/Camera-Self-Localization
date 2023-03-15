@@ -113,7 +113,7 @@ class SIYIRTSP:
 
             if (time()-self._last_image_time)> self._connection_timeout:
                 self._logger.warning("Connection timeout. Exiting")
-                self.close()
+                self.close()    
             
             if self._frame is None:
                 continue
