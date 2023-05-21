@@ -1,0 +1,5 @@
+{
+    "topic": "A8Camera/camera",
+    "queue_size": 1,
+    "period": 0.1
+}
