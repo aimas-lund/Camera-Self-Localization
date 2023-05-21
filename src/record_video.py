@@ -5,9 +5,9 @@ cap= cv2.VideoCapture('rtsp://192.168.144.25:8554/main.264')
 width= int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 height= int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-saveVideo = True
+saveVideo = False
 takePicture = False
-showVideo = False
+showVideo = True
 
 if saveVideo == True:
     writer= cv2.VideoWriter('videos/basicvideo.mp4', cv2.VideoWriter_fourcc(*'DIVX'), 20, (width,height))
