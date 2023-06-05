@@ -1,5 +1,5 @@
-# Camera-Self-Localization-MBZIRC
-The repository contains the code for a SIYI A8 Mini Camera self-localization system as part of the DTU competition in the Mohamed Bin Zayed International Robotics Challenge (MBZIRC).
+# Camera-Self-Localization
+The repository contains the code for a SIYI A8 Mini Camera self-localization system as part of the DTU special course.
 
 ## Project Overview
 This project aims to build a self-localization system for cameras, which is particularly useful in robotics applications where localization in GNSS-denied environmentsis crucial. The system uses extracted features from the camera to accurately estimate the position and orientation of the camera relative to a known environment.
