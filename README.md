@@ -9,6 +9,10 @@ The camera needs to see a marker, to recognize the center of it and estimate the
 ![Marker pattern recognized by the camera.](data/landmark_5_0.png)
 
 ## Technologies
-The pose estimation has been developed by [@Bisssen](https://github.com/Bisssen) using OpencCV, a fork of the repo can be found in the folder [A8Camera/marker_localization_main/](A8Camera/marker_localization_main/). The gimbal of the camera SIYI A8 Mini is done thanks to   The code is done to get connection of PX4 controller through ROS2.
+The pose estimation has been developed by [@Bisssen](https://github.com/Bisssen) using OpencCV, a fork of the repo can be found in the folder [A8Camera/marker_localization_main/](A8Camera/marker_localization_main/). The gimbal of the camera SIYI A8 Mini is done thanks to [@mzahana](https://github.com/mzahana). The code is done to get connection of PX4 controller through ROS2, publishing the images and gimbal position given by the SIYI SDK, and reciving the this topics with diferents toppics from the PX4 so it computes the actual pose of the drone.
 
+## Installation
+### SIYI A8 Camera
+This project has been done with the A8 Camera connected through the ethernet port, and setting up the IP computer to 192.168.144.1 and the netmask to 255.255.255.0.
+This repository has been tested in [ROS2 Foxy](https://docs.ros.org/en/foxy/index.html), so the installation of this version is highly reccomended. 
 In construction...
