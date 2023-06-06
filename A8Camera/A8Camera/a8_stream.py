@@ -27,7 +27,7 @@ class CameraSubscriber(Node):
         server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         host_name = socket.gethostname()
         # host_ip = '10.209.229.178'
-        host_ip = '192.168.10.20'
+        host_ip = '192.168.10.20' # paste your IP addres here
         port = 9999
         print(f'HOST IP: {host_ip}\t HOST NAME: {host_name}\t PORT: {port}')
         socket_address = (host_ip,port)
